@@ -6,3 +6,6 @@ Hw1.js contains the following functions:
 2. String
 
 Also contains the Object Practice, and at least 5 commits with meaningful messages
+
+
+![Image of Terminal Output](TerminalOutput.png)
