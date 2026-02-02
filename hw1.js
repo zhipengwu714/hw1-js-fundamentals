@@ -8,10 +8,11 @@ function sum(arr) {
     return total;
 }
 
-console.log(sum(data))
+console.log("Sum: ", sum(data))
 
 function average(arr) {
     return sum(data)/data.length;
 }
 
-console.log(average(data))
+console.log("Average: ", average(data))
+
