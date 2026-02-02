@@ -27,7 +27,7 @@ const scores = [88, 92, 76, 81, 95, 100, 89];
 
 console.log("All scores:", scores);
 console.log("First score:", scores[0]);
-console.log("Last score:", scores[4]);
+console.log("Last score:", scores[6]);
 console.log("How many?", scores.length);
 
 function sum(arr) {
@@ -44,7 +44,7 @@ function average(arr) {
   return sum(arr) / arr.length;
 }
 
-console.log("Average:", average(scores));
+console.log("Average:", average(scores).toFixed(2));
 
 function max(arr) {
   let m = arr[0];
@@ -55,3 +55,13 @@ function max(arr) {
 }
 
 console.log("Max:", max(scores));
+
+function min(arr) {
+    let x = arr[0];
+    for (const n of arr) {
+        if (n<x) x=n;
+    }
+    return x;
+}
+
+console.log("Min:", min(scores));
