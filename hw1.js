@@ -67,3 +67,24 @@ function countVowels(str) {
     return total;
 }
 console.log("Vowels Contained: ", countVowels(string))
+
+
+//HW PART 3
+
+const student = {
+    name: "Zhi Peng Wu",
+    age: 20,
+    grades: [85, 90, 78],
+    getAverage: function() {
+        let total = 0;
+        for (const n of this.grades) {
+            total += n;
+        }
+        return total/this.grades.length;
+    },
+    isHonorRoll: function() {
+        return this.getAverage() > 85;
+    }
+}
+console.log(student.getAverage().toFixed(2))
+console.log(student.isHonorRoll())
