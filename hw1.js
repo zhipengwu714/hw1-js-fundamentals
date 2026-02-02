@@ -1,4 +1,4 @@
-const arr = [1,2,3];
+const data = [1,2,3];
 
 function sum(arr) {
     let total = 0;
@@ -8,4 +8,10 @@ function sum(arr) {
     return total;
 }
 
-console.log(sum(arr))
+console.log(sum(data))
+
+function average(arr) {
+    return sum(data)/data.length;
+}
+
+console.log(average(data))
