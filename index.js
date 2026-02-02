@@ -45,3 +45,13 @@ function average(arr) {
 }
 
 console.log("Average:", average(scores));
+
+function max(arr) {
+  let m = arr[0];
+  for (const n of arr) {
+    if (n > m) m = n;
+  }
+  return m;
+}
+
+console.log("Max:", max(scores));
